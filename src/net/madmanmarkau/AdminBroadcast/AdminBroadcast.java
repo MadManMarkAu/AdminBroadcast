@@ -137,6 +137,8 @@ public class AdminBroadcast extends JavaPlugin {
 				}
 			}
 			
+			log.info(ChatColor.DARK_PURPLE + "[(O) " + source + "] " + message);
+			
 	    	return true;
 		}
 		return false;
