@@ -101,7 +101,7 @@ public class AdminBroadcast extends JavaPlugin {
 				Player player = (Player) sender;
 				source = player.getName();
 
-				if (!Permissions.has(player, "adminbroadcast.gmsg")) {
+				if (!Permissions.has(player, "adminbroadcast.gsay")) {
 					return false;
 				}
 			} else {
@@ -123,7 +123,7 @@ public class AdminBroadcast extends JavaPlugin {
 				Player player = (Player) sender;
 				source = player.getName();
 
-				if (!Permissions.has(player, "adminbroadcast.omsg")) {
+				if (!Permissions.has(player, "adminbroadcast.osay")) {
 					return false;
 				}
 			} else {
