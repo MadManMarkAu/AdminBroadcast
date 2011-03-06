@@ -1,0 +1,13 @@
+name: AdminBroadcast
+version: 0.1
+main: net.madmanmarkau.AdminBroadcast.AdminBroadcast
+commands:
+  say:
+    description: Broadcasts a message to all users.
+    usage: /say <message>
+  gmsg:
+    description: Broadcast a message to a specific group.
+    usage: /gmsg <group> <message>
+  omsg:
+    description: Broadcast a message to all server ops, including console.
+    usage: /omsg <message>
