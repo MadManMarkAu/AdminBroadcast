@@ -9,7 +9,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.util.config.Configuration;
 
 import com.nijiko.permissions.PermissionHandler;
 import com.nijikokun.bukkit.Permissions.Permissions;
@@ -20,7 +19,6 @@ import com.nijikokun.bukkit.Permissions.Permissions;
 public class AdminBroadcast extends JavaPlugin {
 	public final Logger log = Logger.getLogger("Minecraft");
     public PermissionHandler Permissions;
-	public Configuration Config;
     public PluginDescriptionFile pdfFile;
 
 	@Override
@@ -76,7 +74,7 @@ public class AdminBroadcast extends JavaPlugin {
 			return false;
 		}
 		
-		if (cmd.getName().compareToIgnoreCase("say") == 0) {
+		if (cmd.getName().compareToIgnoreCase("adminbroadcast_say") == 0) {
 			if (sender instanceof Player) {
 				Player player = (Player) sender;
 				source = player.getName();
@@ -96,7 +94,7 @@ public class AdminBroadcast extends JavaPlugin {
 			}
 			
 	    	return true;
-		} else if (cmd.getName().compareToIgnoreCase("gsay") == 0) {
+		} else if (cmd.getName().compareToIgnoreCase("adminbroadcast_gsay") == 0) {
 			if (sender instanceof Player) {
 				Player player = (Player) sender;
 				source = player.getName();
@@ -118,7 +116,7 @@ public class AdminBroadcast extends JavaPlugin {
 			}
 			
 	    	return true;
-		} else if (cmd.getName().compareToIgnoreCase("osay") == 0) {
+		} else if (cmd.getName().compareToIgnoreCase("adminbroadcast_osay") == 0) {
 			if (sender instanceof Player) {
 				Player player = (Player) sender;
 				source = player.getName();

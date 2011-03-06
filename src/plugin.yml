@@ -1,13 +1,19 @@
 name: AdminBroadcast
 version: 0.1
 main: net.madmanmarkau.AdminBroadcast.AdminBroadcast
+author: MadManMarkAu
+description: >
+             Allow message broadcasting to users, groups and ops.
 commands:
-  say:
+  adminbroadcast_say:
     description: Broadcasts a message to all users.
+    aliases: say
     usage: /say <message>
-  gsay:
+  adminbroadcast_gsay:
     description: Broadcast a message to a specific group.
+    aliases: gsay
     usage: /gsay <group> <message>
-  osay:
+  adminbroadcast_osay:
     description: Broadcast a message to all server ops, including console.
+    aliases: osay
     usage: /osay <message>
