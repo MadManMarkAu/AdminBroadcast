@@ -96,7 +96,7 @@ public class AdminBroadcast extends JavaPlugin {
 			}
 			
 	    	return true;
-		} else if (cmd.getName().compareToIgnoreCase("gmsg") == 0) {
+		} else if (cmd.getName().compareToIgnoreCase("gsay") == 0) {
 			if (sender instanceof Player) {
 				Player player = (Player) sender;
 				source = player.getName();
@@ -118,7 +118,7 @@ public class AdminBroadcast extends JavaPlugin {
 			}
 			
 	    	return true;
-		} else if (cmd.getName().compareToIgnoreCase("omsg") == 0) {
+		} else if (cmd.getName().compareToIgnoreCase("osay") == 0) {
 			if (sender instanceof Player) {
 				Player player = (Player) sender;
 				source = player.getName();
