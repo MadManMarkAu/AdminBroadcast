@@ -92,7 +92,9 @@ public class AdminBroadcast extends JavaPlugin {
 			for (Player thisPlayer : players) {
 				thisPlayer.sendMessage(ChatColor.DARK_PURPLE + "[" + source + "] " + message);
 			}
-			
+
+			log.info(ChatColor.DARK_PURPLE + "[" + source + "] " + message);
+
 	    	return true;
 		} else if (cmd.getName().compareToIgnoreCase("adminbroadcast_gsay") == 0) {
 			if (sender instanceof Player) {
@@ -114,7 +116,9 @@ public class AdminBroadcast extends JavaPlugin {
 					thisPlayer.sendMessage(ChatColor.DARK_PURPLE + "[(G) " + source + "] " + message);
 				}
 			}
-			
+
+			log.info(ChatColor.DARK_PURPLE + "[(G:" + args[0] + ") " + source + "] " + message);
+
 	    	return true;
 		} else if (cmd.getName().compareToIgnoreCase("adminbroadcast_osay") == 0) {
 			if (sender instanceof Player) {
